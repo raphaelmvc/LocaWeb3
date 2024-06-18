@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:background="@color/primaria">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/locaweb" />
+
+
+
+    </RelativeLayout>
+
+    <!-- Menu lateral esquerdo -->
+    <LinearLayout
+        android:id="@+id/navigationDrawer"
+        android:layout_width="173dp"
+        android:layout_height="578dp"
+        android:layout_below="@id/topBar"
+        android:layout_gravity="start"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white"
+        android:elevation="16dp"
+        android:orientation="vertical">
+
+        <!-- Itens do menu -->
+        <TextView
+            android:id="@+id/menuItem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:text="Caixa de Entrada"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/menuItem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:text="Favoritos"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/menuItem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:text="Enviados"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/menuItem4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:text="Rascunhos"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/menuItem5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:text="Spam"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/menuItem6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:text="Lixeira"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!-- Conteúdo principal -->
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:background="@android:color/background_light" />
+
+</RelativeLayout>
